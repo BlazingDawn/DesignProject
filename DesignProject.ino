@@ -120,8 +120,8 @@ void GetData(){ //Obtains gyroscope and current data
   Serial.print("\t");
   Serial.println(Amps1);
   posx = event.orientation.x;
-  posy = event.orientation.y-.8;
-  posz = event.orientation.z+8;
+  posy = event.orientation.y;
+  posz = event.orientation.z;
   ADCFilter.Filter(posx);
   ADCFilter.Filter(posy);
   ADCFilter.Filter(posz);
